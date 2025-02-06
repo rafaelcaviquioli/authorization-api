@@ -8,14 +8,13 @@ public class IdpDomainLookupResponse
     [JsonPropertyName("extension_has_identity_provider")]
     public bool HasIdentityProvider { get; private set; }
 
-    // TODO: rename it to provider singular?
-    [JsonPropertyName("extension_identity_providers")]
-    public string? IdentityProviders { get; private set; }
+    [JsonPropertyName("extension_identity_provider")]
+    public string? IdentityProvider { get; private set; }
 
-    public IdpDomainLookupResponse(string identityProviders)
+    public IdpDomainLookupResponse(string identityProvider)
     {
         HasIdentityProvider = true;
-        IdentityProviders = identityProviders;
+        IdentityProvider = identityProvider;
     }
 
     public IdpDomainLookupResponse()
