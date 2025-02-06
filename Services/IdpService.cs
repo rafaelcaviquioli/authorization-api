@@ -6,6 +6,8 @@ public class IdpService : IIdpService
     {
         {"contoso.com", "keycloak"},
         {"contoso.net", "keycloak"},
+        {"hotmail.com", "microsoft" },
+        {"live.com", "microsoft" }
     };
 
     public string? GetIdpIdByDomain(string domain) =>
