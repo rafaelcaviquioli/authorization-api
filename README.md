@@ -1,4 +1,4 @@
-# authorization-api
+# idp-discovery
 This demo project has endpoints used by AD B2C custom policies on user authentication flows.
 
 ## IDP Discovery endpoint
