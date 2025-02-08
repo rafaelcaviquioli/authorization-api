@@ -2,22 +2,22 @@
 
 namespace AuthorizationApi.Models;
 
-public class IdpDomainLookupResponse
+public class IdpDiscoveryResponse
 {
-    // TODO: Try tro change the policy to not need this property
+    // The prefix extension_ is implied by AD B2C REST integration specification
     [JsonPropertyName("extension_has_identity_provider")]
     public bool HasIdentityProvider { get; private set; }
 
     [JsonPropertyName("extension_identity_provider")]
     public string? IdentityProvider { get; private set; }
 
-    public IdpDomainLookupResponse(string identityProvider)
+    public IdpDiscoveryResponse(string identityProvider)
     {
         HasIdentityProvider = true;
         IdentityProvider = identityProvider;
     }
 
-    public IdpDomainLookupResponse()
+    public IdpDiscoveryResponse()
     {
     }
 }

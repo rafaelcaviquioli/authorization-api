@@ -1,6 +1,6 @@
 ﻿namespace AuthorizationApi.Models;
 
-public class IdpDomainLookupRequest
+public class IdpDiscoveryRequest
 {
     public string Domain { get; set; } = string.Empty;
 }
